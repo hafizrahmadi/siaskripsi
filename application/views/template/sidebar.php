@@ -5,7 +5,7 @@
         <!-- Sidebar user panel -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="<?php echo base_url('assets/img/user.jpg') ?>" class="img-circle" alt="User Image" />
+                <img src="<?php echo base_url('assets/img/user2.png') ?>" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info" style="padding-top: 2px;">
                 <p style="margin-bottom: 3px;"><?php echo isset($username)?'Halo '.ucwords($username).' !':null; ?></p>

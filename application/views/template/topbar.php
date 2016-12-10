@@ -21,13 +21,13 @@
                         <!-- User Account: style can be found in dropdown.less -->
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <img src="<?php echo base_url('assets/img/user.jpg') ?>" class="user-image" alt="User Image"/>
+                                <img src="<?php echo base_url('assets/img/user2.png') ?>" class="user-image" alt="User Image"/>
                                 <span class="hidden-xs"><?php echo isset($username)?ucwords($username):null; ?></span>
                             </a>
                             <ul class="dropdown-menu" >
                                 <!-- User image -->
                                 <li class="user-header" style="height: 145px;">
-                                    <img src="<?php echo base_url('assets/img/user.jpg') ?>" class="img-circle" alt="User Image" />
+                                    <img src="<?php echo base_url('assets/img/user2.png') ?>" class="img-circle" alt="User Image" />
                                     <p>
                                         <?php echo isset($username)?ucwords($username):null; ?>
                                         <!-- <small>Member since Nov. 2012</small> -->
