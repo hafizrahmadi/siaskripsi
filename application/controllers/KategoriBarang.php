@@ -9,7 +9,7 @@ class KategoriBarang extends CI_Controller {
 
 	public function index()
 	{
-		
+		$this->load->view('view_kat_barang');
 	}
 
 	public function tambah()

@@ -18,5 +18,31 @@ class M_User extends CI_Model
 			return false;
 		}
 	}
+
+	function setUser($data){
+		if ($data['id_user']=='') {
+			$query = "INSERT INTO tb_user(username,password,level,DELETED) VALUES(
+			'".$data['username']."',
+			'".$data['password']."',
+			'".$data['level']."',
+			'N')";
+		}else{
+			$query = "UPDATE tb_user SET ".
+			"username = '".$data['username']."',".
+			"password = '".$data['password']."',".
+			" WHERE id_user = ".$data['id_user'];
+		}
+		if ($this->db->query($query)) {
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+	function getIDUser($id){
+		$query = "select * from tb_user where id_user =".$id;
+		$result = $this->db->query($query);
+		return $result->result_array();
+	}
 }
  ?>

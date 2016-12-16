@@ -1,0 +1,54 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+class M_KategoriBarang extends CI_Model {
+
+	// public $variable;
+
+	public function __construct()
+	{
+		parent::__construct();
+		
+	}
+
+	public function getKatBarang()
+	{
+		$query = "select * from tb_kat_barang where deleted='N'";
+		$result = $this->db->query($query);
+		return $result->result_array();
+	}
+
+	public function getIDKatBarang($id)
+	{
+		$query = "select * from tb_kat_barang where id_kat_barang =".$id;
+		$result = $this->db->query($query);
+		return $result->result_array();
+	}
+
+	public function setKatBarang($data)
+	{
+		if ($data['id_kat_barang']=='') {
+			$query = "INSERT INTO TB_KAT_BARANG(KAT_BARANG, DELETED) VALUES('".$data['kat_barang']."','N')";
+		}else{
+			$query = "UPDATE TB_KAT_BARANG SET KAT_BARANG = '".$data['kat_barang']."' WHERE ID_KAT_BARANG = ".$data['id_kat_barang'];
+		}
+		if ($this->db->query($query)) {
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+	public function deleteKatBarang($id)
+	{
+		$query = "UPDATE TB_KAT_BARANG SET DELETED='Y' WHERE ID_KAT_BARANG = ".$id;
+		if ($this->db->query($query)) {
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+}
+
+/* End of file M_KategoriBarang */
+/* Location: ./application/models/M_KategoriBarang */

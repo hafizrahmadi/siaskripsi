@@ -5,12 +5,12 @@
         <!-- Sidebar user panel -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="<?php echo base_url('assets/img/user2.png') ?>" class="img-circle" alt="User Image" />
+                <img style="margin-top: 3px" src="<?php echo base_url('assets/img/user2.png') ?>" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info" style="padding-top: 2px;">
                 <p style="margin-bottom: 3px;"><?php echo isset($username)?'Halo '.ucwords($username).' !':null; ?></p>
-                <a href="#" style="font-size: 11px"><i class="fa fa-calendar-o text-success"></i> <span id="date"></span></a><br>
-                <a href="#" style="font-size: 11px"><i class="fa fa-clock-o text-success"></i> <span id="txt"></span></a>
+                <a href="#" style="font-size: 9px"><i class="fa fa-calendar-o text-success"></i> <span id="date"></span></a><br>
+                <a href="#" style="font-size: 9px"><i class="fa fa-clock-o text-success"></i> <span id="txt"></span></a>
             </div>
         </div>        
         <!-- sidebar menu: : style can be found in sidebar.less -->
@@ -36,7 +36,7 @@
                     <i class="fa fa-table"></i> <span>Kasir</span>
                 </a>
             </li>  
-            <li class="treeview">
+           <!--  <li class="treeview">
                 <a href="#">
                     <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
                 </a>
@@ -165,7 +165,7 @@
             <li class="header">LABELS</li>
             <li><a href="#"><i class="fa fa-circle-o text-danger"></i> Important</a></li>
             <li><a href="#"><i class="fa fa-circle-o text-warning"></i> Warning</a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-info"></i> Information</a></li>
+            <li><a href="#"><i class="fa fa-circle-o text-info"></i> Information</a></li> -->
         </ul>
     </section>
     <!-- /.sidebar -->

@@ -28,7 +28,7 @@
                <h4 class="text-green">Sistem Informasi Akuntansi</h4>
             </div><!-- /.login-logo -->
             <div class="login-box-body">
-                <p class="login-box-msg">Masukkan Username dan Password untuk Login</p>
+                <p class="login-box-msg">Masukkan Username dan Password</p>
                 <?php echo isset($error_message)?'<center><div class="alert alert-danger alert-dismissable" style="padding:3px 3px">'.$error_message.'</div></center>':null; ?>
                 <form action="<?php echo site_url('auth/login') ?>" method="post">
                         <?php echo form_error('username') ?>
